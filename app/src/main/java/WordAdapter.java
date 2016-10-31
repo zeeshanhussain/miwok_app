@@ -29,10 +29,10 @@ public class WordAdapter extends ArrayAdapter<com.example.android.miwok.Word> {
         com.example.android.miwok.Word currentWord = getItem(position);
 
         TextView miwokTextView = (TextView) listItemView.findViewById(R.id.view1);
-        miwokTextView.setText(currentWord.getMiwokTranslation());
+        miwokTextView.setText(currentWord.getMiwokTranslationId());
 
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.view2);
-        defaultTextView.setText(currentWord.getDefaultTranslation());
+        defaultTextView.setText(currentWord.getDefaultTranslationId());
 
         ImageView imageImageView = (ImageView)  listItemView.findViewById(R.id.wew);
         if (currentWord.hasImage()){
